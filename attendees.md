@@ -8,7 +8,5 @@
 - Faeze Mahmoudi
 - Fateme Garshasbi
 - nima saei
-<<<<<<< HEAD
-
 ----------------------
 - Tahoora Majlesi
