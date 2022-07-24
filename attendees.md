@@ -7,9 +7,13 @@
 - Mohammad Amin Rami
 - Faeze Mahmoudi
 - Fateme Garshasbi
-- nima saei
-<<<<<<< HEAD
+- nima sa
+
 
 ----------------------
 - Tahoora Majlesi
 - Sina Mansouri
+---------------------
+- faeze mahmoudi
+- Tahoora Majlesi
+-sina
