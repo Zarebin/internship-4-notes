@@ -8,8 +8,10 @@
 - Faeze Mahmoudi
 - Fateme Garshasbi
 - nima saei
-
 ----------------------
-Mohammad Amin Rami
-Sina Mansouri
-Nima Saei
+- Mohammad Amin Rami
+- faeze mahmoudi
+- Tahoora Majlesi
+- Lashkari
+
+
