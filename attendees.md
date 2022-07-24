@@ -8,7 +8,10 @@
 - Faeze Mahmoudi
 - Fateme Garshasbi
 - nima saei
----------------------
+----------------------
+- Mohammad Amin Rami
 - faeze mahmoudi
 - Tahoora Majlesi
--Fatemeh Garshasbi
+- Lashkari
+- Fatemeh Garshasbi
+
