@@ -1,3 +1,3 @@
 - hassan ketabi
-- Mohammad Lashkari
+- mohammad lashkari
 - melika karimi
