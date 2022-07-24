@@ -11,6 +11,4 @@
 <<<<<<< HEAD
 
 ----------------------
-=======
-- diif
->>>>>>> 2b5755c (add difference)
+- Tahoora Majlesi
