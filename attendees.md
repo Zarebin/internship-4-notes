@@ -8,12 +8,7 @@
 - Faeze Mahmoudi
 - Fateme Garshasbi
 - nima saei
-Lashkariam
  ..............................
-lashkari
-=======
- HEAD
-
-----------------------
 - Tahoora Majlesi
- main
+- faeze mahmoudi
+- lashkari
