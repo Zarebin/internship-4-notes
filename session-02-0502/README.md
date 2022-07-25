@@ -172,13 +172,22 @@ git push --set-upstream new_branch
 
 --
 
-## Books to read
-### python
--   Distilled python by David M. Beazley
+# Books to read
+## python
+1.   Distilled python by David M. Beazley
+
 ![distilled](https://m.media-amazon.com/images/I/416ca2gxUoL._AC_UY218_.jpg)
--   Fluent python by Luciano Ramlho
+
+2.   Fluent python by Luciano Ramlho
+
 ![fluent](https://m.media-amazon.com/images/I/81OvszBEdhL._AC_UY218_.jpg)
 
-### Javascript
--   you dont know js [Kyle Simpson]
--   The definitive guide js david flanagan
+## Javascript
+1. You dont know js [Kyle Simpson]
+
+![ydkjs](https://m.media-amazon.com/images/I/410f-bUBR3L.jpg)
+
+2. The definitive guide js david flanagan
+
+![flanagan](https://images-na.ssl-images-amazon.com/images/I/919ZMTHDPBL.jpg)
+
