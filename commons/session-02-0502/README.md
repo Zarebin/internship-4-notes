@@ -1,3 +1,18 @@
+In this sesssion we have:
+- [How to become a 10X engineer](#serve-in-nodejs)
+- [Linux apps]()
+- [linux commands]()
+- [What is my IP address?]()
+- [Static file serving and directory listing]()
+- [Git]()
+- [Books to read]()
+
+# Cheatsheets
+* [git](https://education.github.com/git-cheat-sheet-education.pdf)
+* [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
+* [linux]()
+* [vim](https://devhints.io/vim)
+
 # How to become a 10X engineer
 To be a good and great engineer you need to do some self-improvements. An improved memory is one of those. To do so you can use Spaced Repitition method. Some softwares help you to use this technique like Anki. Find the links below to read more about this improvement and how to download Anki and also use shared decks to import in Anki software.
 
@@ -64,6 +79,7 @@ Tasks related to processes (e.g. killing and renicing) can be done without enter
 - grep 	Prints lines that match patterns
 - wc 	Word count files
 	`cat test.txt | wc -l` --> number of lines in test.txt
+- `tree`
 ---
 ### ways to see all of the commands that you have entered:
 - with up/down key
