@@ -164,6 +164,7 @@ You can find some dictionaries searching this in a search enginne : *download bg
 
 # Git
 ### adding ssh key for cloning with ssh
+[source](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 1) Generating ssh key
 	```
 	$ ssh-keygen -t ed25519 -C "your_email@example.com"
