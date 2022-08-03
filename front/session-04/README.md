@@ -1,3 +1,14 @@
+Selectors Part I
+- Overview
+- Basic Selectors
+- Specifications
+- Selectors API
+- Brief intro to Specificity
+- Global selector
+- Relational selectors & combinators
+
+![specifishity](https://specifishity.com/specifishity.png)
+
 # Selector
 
 ## Basic Selectors
