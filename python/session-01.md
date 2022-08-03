@@ -170,7 +170,8 @@ You can download Mindomo for free from it's official website
 
 ---
 ## Obsidian
-Obsidian is simply an interface for plain text files that are stored on your computer, and supports standard Markdown formatting. Many themes will have syntax highlighting to make it easier to see your Markdown-formatted text, but the Markdown that Obsidian supports will be viewable in any other text editor.
+Obsidian is a powerful knowledge base that works on top of a local folder of plain text Markdown files. In Obsidian, making and following connections is frictionless, and with the connections in place, you can explore all of your knowledge in the interactive graph view. Obsidian supports CommonMark and GitHub Flavored Markdown (GFM), along with other useful notetaking features such as tags, LaTeX mathematical expressions, mermaid diagrams, footnotes, internal links and embedding Obsidian notes or external files. Obsidian also has a plugin system with 20+ supported plugins to expand its capabilities. The plugin system is currently a work-in-progress, there will be public APIs available to developers in the v1.0 release.
+for more information you can visit this [link](https://obsidian.md/#:~:text=Obsidian%20is%20a%20powerful%20knowledge,%2C%20and%20Linux%20(Flatpak).)
 
 ![Obsidian](https://d3htmdvqo5vzzb.cloudfront.net/wp-content/uploads/2021/11/7dabfb5511d212b7b8358016f48fb1081909b4b4-275x275.jpeg)
 
