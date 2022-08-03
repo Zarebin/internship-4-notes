@@ -166,6 +166,7 @@ The Probelm
 ```
 ![Mindomo](https://www.mindomo.com/c/wp-content/uploads/2022/05/3.-Problem-Solving.png)
 You can download Mindomo for free from it's official website
+
 ---
 ## Obsidian
 Obsidian is simply an interface for plain text files that are stored on your computer, and supports standard Markdown formatting. Many themes will have syntax highlighting to make it easier to see your Markdown-formatted text, but the Markdown that Obsidian supports will be viewable in any other text editor.
