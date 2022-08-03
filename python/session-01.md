@@ -1,4 +1,4 @@
-# Pythin Session-01
+# Python Session-01
 In this session, the following topics were discussed: 
 - `.gitignore` Files 
 - Chapter 1 of Python Distilled
