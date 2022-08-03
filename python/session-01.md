@@ -107,10 +107,11 @@ Or:
 - Lists can be modified but tuples cannot be modified
 ---
 ## Chapter 1 of Fluent Python: The Python Data Model
-One of the best qualities of Python is its consistency. After working with Python for a while, you are able to start making informed, correct guesses about features that are new to you.
-They key to code well in python is to try to make everyrhing *pythonic*. This means, one should try to code in pythonic structure as much as possible, by for example, using built-in functions of python instead of reinventing the wheel.  
-You can think of the python data model as a description of Python as a framework.When using a framework, we spend a lot of time coding methods that are called by the framework. The same happens when we leverage the Python Data Model to build new classes.The Python interpreter invokes special methods to perform basic object operations, often triggered by special syntax. The special method names are always written with leading and trailing double underscores. For example, the syntax `obj[key]` is supported by the `__getitem__` special method.
-Implementing these special methods in our classes is a big step to make our code pythonic. Because in this way, we can use built-in functions such as `len()` or index our object with the familiar syntax `obj[key]` and thus our class will need a very brief documentation.
+One of the best qualities of Python is its consistency. After working with Python for a while, you are able to start making informed, correct guesses about features that are new to you.   
+They key to code well in python is to try to make everyrhing *pythonic*. This means, one should try to code in pythonic structure as much as possible, by for example, using built-in functions of python instead of reinventing the wheel.    
+You can think of the python data model as a description of Python as a framework.When using a framework, we spend a lot of time coding methods that are called by the framework. The same happens when we leverage the Python Data Model to build new classes.The Python interpreter invokes special methods to perform basic object operations, often triggered by special syntax. The special method names are always written with leading and trailing double underscores. For example, the syntax `obj[key]` is supported by the `__getitem__` special method.    
+Implementing these special methods in our classes is a big step to make our code pythonic. Because in this way, we can use built-in functions such as `len()` or index our object with the familiar syntax `obj[key]` and thus our class will need a very brief documentation.    
+
 ### Example: A Pythonic Card Deck
 Consider the following code:
 ```
@@ -170,7 +171,10 @@ You can download Mindomo for free from it's official website
 ---
 ## Obsidian
 Obsidian is simply an interface for plain text files that are stored on your computer, and supports standard Markdown formatting. Many themes will have syntax highlighting to make it easier to see your Markdown-formatted text, but the Markdown that Obsidian supports will be viewable in any other text editor.
+
 ![Obsidian](https://d3htmdvqo5vzzb.cloudfront.net/wp-content/uploads/2021/11/7dabfb5511d212b7b8358016f48fb1081909b4b4-275x275.jpeg)
+
+
 ![Obsidian](https://d31ezp3r8jwmks.cloudfront.net/r6pzufe94nsvm4h7wfky5xs2jyi9)
 
 
