@@ -1,12 +1,12 @@
 # Python Session-03
 
 ----
-Chapter 1 and 2 of Fluent Python: 
+## Chapter 1 and 2 of Fluent Python: 
 
-### Magic Methods:
+- ### Magic Methods:
 The term magic method is slang for special methods(like `__getitem__`).
 Or you can call them **dunder methods** (double underscore before and after)
-## `__repr__` vs `__str__`:
+### `__repr__` vs `__str__`:
 - `__repr__`
 The string returned by this function should be unambiguous. Used for logging and debugging.
 - `__str__`
