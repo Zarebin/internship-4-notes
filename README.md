@@ -10,8 +10,8 @@
   - YDKJS (forward&backward, many faces)
   - React (rendering element, component and props)
 - [Session-07 (1401/05/18)](front/session-04/) 
-  - CSS
-  - React
+  - CSS (@faezehalizadeh)
+  - React (@garshasbi-f)
 
 ## Python sessions
 [Session-01 (1401/05/11)](https://github.com/Zarebin/internship-4-notes/blob/python-session-01/python/session-01.md) gitignore, Python Distilled, Fluent Python, Mindomo
