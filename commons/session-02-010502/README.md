@@ -1,11 +1,11 @@
 In this sesssion we have:
-- [How to become a 10X engineer](#serve-in-nodejs)
-- [Linux apps]()
-- [linux commands]()
-- [What is my IP address?]()
-- [Static file serving and directory listing]()
-- [Git]()
-- [Books to read]()
+- [How to become a 10X engineer](#how-to-become-a-10x-engineer)
+- [Linux apps](#linux-apps)
+- [linux commands](#linux-commands)
+- [What is my IP address?](#what-is-my-ip-address)
+- [Static file serving and directory listing](#static-file-serving-and-directory-listing)
+- [Git](#git)
+- [Books to read](#books-to-read)
 
 # Cheatsheets
 * [git](https://education.github.com/git-cheat-sheet-education.pdf)
