@@ -100,3 +100,71 @@ The general sibling selector selects all elements that are next siblings of a sp
 [link](https://www.w3schools.com/css/css_combinators.asp)
 
 ## Attribute Selectors
+
+-------------------------------------------------------------------------
+
+#JS
+
+### What's paradigm
+The term "paradigm" in programming language context refers to a broad (almost universal) mindset and approach to structuring code.
+
+###Typical paradigm
+-Procedural (like C)
+-Object-oriented (like Java)
+-Functional (like Haskell)
+
+###Backwards & Forwards
+Backwards compatibility means that once something is accepted as valid JS, there will not be a future change to the language that causes that code to become invalid JS
+
+forwards-compatible means that including a new addition to the language in a program would not cause that program to break if it were run in an older engine. (like Html and CSS)
+
+###What's Transpiling
+Transpiling is a contrived and community-invented term to describe using a tool to convert the source code of a program from one form to another (but still as textual source code). 
+
+###Babel
+Babel is the most common transpiler [Babel](https://babeljs.io)
+
+###Example of transpiling by babel
+
+The code we write: 
+
+```
+if (something) {
+    let x = 3;
+    console.log(x);
+}
+else {
+    let x = 4;
+    console.log(x);
+}
+
+```
+Code after transpiling :
+
+```
+var x$0, x$1;
+if (something) {
+    x$0 = 3;
+    console.log(x$0);
+}
+else {
+    x$1 = 4;
+    console.log(x$1);
+}
+
+```
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
