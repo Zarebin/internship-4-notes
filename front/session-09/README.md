@@ -8,5 +8,5 @@
   3. Then the engine converts that AST to a kind-of byte code, a binary intermediate representation (IR), which is then refined/converted even further by the optimizing JIT compiler.
   4. Finally, the JS VM executes the program.
 ![flow of js source program](https://github.com/getify/You-Dont-Know-JS/raw/2nd-ed/get-started/images/fig3.png)
-- ** JS is a compiled language.**
+- **JS is a compiled language**
 
