@@ -18,7 +18,7 @@
   - Js (@lashkari)
 - [Session-09 (1401/05/22)](front/session-09/) 
   - CSS (@melika-ka)
-  - Js (@nima)
+  - Js (@NimaSaei379)
   - React (@garshasbi-f)
 
 ## Python sessions
