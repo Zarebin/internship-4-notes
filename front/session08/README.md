@@ -13,8 +13,7 @@
 
  - **question**
  - *What is the difference between :first-child and :first-of-type?*
- - **answer**
- - *[link](https://stackoverflow.com/questions/24657555/what-is-the-difference-between-first-child-and-first-of-type)*
+ - **answer :** *[link](https://stackoverflow.com/questions/24657555/what-is-the-difference-between-first-child-and-first-of-type)*
 
  - [:last-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child)
  - [:last-type-of](https://developer.mozilla.org/en-US/docs/Web/CSS/:last-of-type)
