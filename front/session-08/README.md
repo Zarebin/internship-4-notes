@@ -6,12 +6,12 @@
 
 ### Using State Correctly 
 
-#### Do Not Modify State Directly 
+1- Do Not Modify State Directly 
 
 How to modify the state in a component?
 > use setState()
 
-#### State Updates May Be Asynchronous 
+2- State Updates May Be Asynchronous 
 
 - What is Asynchronous?
 - How will the output of these items be shown?
@@ -33,7 +33,7 @@ this.setState({
   counter: this.state.counter + this.props.increment,
 });
 ```
-#### State Updates are Merged 
+3- State Updates are Merged 
 
 How can you update states independently with separate setState() calls?
 
