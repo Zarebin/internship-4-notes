@@ -27,7 +27,7 @@
 
  - to prevent default behavior in React ,You must call preventDefault explicitly.
  - In JavaScript, class methods are not bound by default.
- - This is not React-specific behavior; it is a part of how functions work in JavaScript. Generally, if you refer to a method without () after it, such as                           onClick={this.handleClick}, you should bind that method.
+ - This is not React-specific behavior; it is a part of how functions work in JavaScript. Generally, if you refer to a method without () after it, such as    onClick={this.handleClick}, you should bind that method.
  
  ### 3 ways to use the event handler:
 
@@ -37,28 +37,34 @@
                   constructor(props) {
                     super(props);
                     this.state = {isToggleOn: true};
-
                     // This binding is necessary to make `this` work in the callback    this.handleClick = this.handleClick.bind(this);  }
-
-                  handleClick() {    this.setState(prevState => ({      isToggleOn: !prevState.isToggleOn    }));  }
-                  render() {
-                    return (
-                      <button onClick={this.handleClick}>        {this.state.isToggleOn ? 'ON' : 'OFF'}
-                      </button>
-                    );
-                  }
+                    handleClick() { 
+                      this.setState(prevState => ({isToggleOn: !prevState.isToggleOn}));
+                      }
+                    render() {
+                      return (
+                        <button onClick={this.handleClick}>
+                          {this.state.isToggleOn ? 'ON' : 'OFF'}
+                        </button>
+                      );
+                    }
                 }
      `
      
  #### 2- You can use public class fields syntax to correctly bind callbacks
         `
                 class LoggingButton extends React.Component {
-                  // This syntax ensures `this` is bound within handleClick.  handleClick = () => {    console.log('this is:', this);  };  render() {
-                    return (
-                      <button onClick={this.handleClick}>
-                        Click me
-                      </button>
-                    );
+                  // This syntax ensures `this` is bound within handleClick.
+                  handleClick = () => { 
+                    console.log('this is:', this);
+                    };
+                    
+                    render() {
+                      return (
+                        <button onClick={this.handleClick}>
+                          Click me
+                        </button>
+                      );
                   }
                 }
         `
@@ -71,7 +77,10 @@
                   }
 
                   render() {
-                    // This syntax ensures `this` is bound within handleClick    return (      <button onClick={() => this.handleClick()}>        Click me
+                    // This syntax ensures `this` is bound within handleClick    
+                    return (      
+                      <button onClick={() => this.handleClick()}> 
+                        Click me
                       </button>
                     );
                   }
