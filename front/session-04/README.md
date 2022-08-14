@@ -154,6 +154,52 @@ else {
 
 ```
  
+###What's polyfill
+
+If the forwards-compatibility issue is not related to new syntax, but rather to a missing API method that was only recently added, the most common solution is to provide a definition for that missing API method that stands in and acts as if the older environment had already had it natively defined. This pattern is called a polyfill 
+
+###Example 
+
+The following  code uses an ES2019 feature, the finally(..) method on the promise prototype. If this code were used in a pre-ES2019 environment, the finally(..) method would not exist, and an error would occur.
+
+```
+// getSomeRecords() returns us a promise for some
+// data it will fetch
+var pr = getSomeRecords();
+
+// show the UI spinner while we get the data
+startSpinner();
+
+pr
+.then(renderRecords)   // render if successful
+.catch(showError)      // show an error if not
+.finally(hideSpinner)  // always hide the spinner
+
+```
+A polyfill for finally(..) in pre-ES2019 environments could look like this:
+
+```
+if (!Promise.prototype.finally) {
+    Promise.prototype.finally = function f(fn){
+        return this.then(
+            function t(v){
+                return Promise.resolve( fn() )
+                    .then(function t(){
+                        return v;
+                    });
+            },
+            function c(e){
+                return Promise.resolve( fn() )
+                    .then(function t(){
+                        throw e;
+                    });
+            }
+        );
+    };
+}
+
+```
+The if statement protects the polyfill definition by preventing it from running in any environment where the JS engine has already defined that method. In older environments, the polyfill is defined, but in newer environments the if statement is quietly skipped.
 
 
 
