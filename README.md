@@ -25,6 +25,14 @@
   - CSS (@lashkariam)
   - Js (@NimaSaei379)
   - React (@garshasbi-f)
+- [Session-11 (1401/05/24)](front/session-11/)
+  - CSS (@garshasbi-f)
+  - Js (@melika-ka)
+  - React (@lashkariam)
+- [Session-12 (1401/05/26)](front/session-12/)
+  - CSS (@melika-ka)
+  - Js (@lashkariam)
+  - React (@NimaSaei379)
 
 ## Python sessions
 - [Session-01 (1401/05/11)](https://github.com/Zarebin/internship-4-notes/blob/python-session-01/python/session-01.md) gitignore, Python Distilled, Fluent Python, Mindomo
