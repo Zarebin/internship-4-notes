@@ -62,7 +62,7 @@
  
 - Question : whats difference between primitive value and object in comparison with "triple-equals" ?
 
-#CSS
+# CSS
 
 ## IE Specific
 
