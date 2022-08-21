@@ -10,7 +10,7 @@
 
 ### Dict Comprehensions
 a dictcomp builds a dict instance by taking key:value pairs from any iterable.
-![[images/Screenshot from 2022-08-20 11-50-33.png]]
+![fluent](./images/Screenshot-from-2022-08-20-11-50-33.png)
 An iterable of key-value pairs like dial_codes can be passed directly to the dict constructor.
 
 
@@ -18,31 +18,31 @@ An iterable of key-value pairs like dial_codes can be passed directly to the dic
 ### Unpacking Mappings
 - we can apply ** to more than one argument in a function call.
 - This works when keys are all strings and unique across all arguments
-![[images/Screenshot from 2022-08-20 11-53-33.png]]
+![fluent](./images/Screenshot-from-2022-08-20-11-53-33.png)
 - `**` can be used inside a dict literal—also multiple times
 - duplicate keys are allowed. Later occurrences overwrite previous ones
-![[images/Screenshot from 2022-08-20 11-53-48.png]]
+![fluent](./images/Screenshot-from-2022-08-20-11-53-48.png)
 
 ### Mergin Mappings with |
 - using `|` and `|=` to merge mappings.(union operators)
 - Usually the type of the new mapping will be the same as the type of the left operand, but it can be the type of the second operand if user-defined types are involved.
 - To update an existing mapping in place, use `|=`.
 
-![[images/Screenshot from 2022-08-20 11-57-41.png]]
+![fluent](./images/Screenshot-from-2022-08-20-11-57-41.png)
 
 
 ### Pattern matching with Mappings
 - They can match instances of any actual or virtual subclass of **collections.abc.Mapping**.
 - pattern matching is a powerful tool to process records structured like nested mappings and sequences, which we often need to read from JSON APIs and databases with semi-structured schemas
-- ![[images/Screenshot from 2022-08-20 12-06-35.png]]
+- ![fluent](./images/Screenshot-from-2022-08-20-12-06-35.png)
 - Note that the order of the keys in the patterns is irrelevant
 - There is no need to use `**extra` to match extra key-value pairs, but if you want to capture them as a dict, you can prefix one variable with `**`. It must be the last in the pattern, and `**_` is forbidden because it would be redundant.
-![[images/Screenshot from 2022-08-20 12-10-38.png]]
+![fluent](./images/Screenshot-from-2022-08-20-12-10-38.png)
 
 - In contrast with sequence patterns, mapping patterns succeed on **partial matches**.
-![[images/Screenshot from 2022-08-21 08-37-38.png]]
+![fluent](./images/Screenshot-from-2022-08-21-08-37-38.png)
 - There is no need to use `**extra` to match extra key-value pairs, but if you want to capture them as a dict, you can prefix one variable with `**`. It must be the **last in the pattern**, and `**_` is forbidden because it would be redundant.
-![[images/Screenshot from 2022-08-21 08-39-34.png]]
+![fluent](./images/Screenshot-from-2022-08-21-08-39-34.png)
 - we’ll study defaultdict and other mappings where key lookups via `__getitem__` (i.e., d[key]) succeed because missing items are created on the fly. 
 - In the context of pattern matching, a match succeeds only if the subject already has the required keys at the top of the match statement.
 ---
@@ -71,10 +71,10 @@ describing the interfaces of dict and similar types.
 ### Inserting or Updating Mutable Values
 - d.get(k, default) is an alternative to d[k] whenever a default value is more convenient than handling KeyError
 - code performs at least two searches for key—three if it’s not found—while setdefault does it all with a single lookup.
-![[images/Screenshot from 2022-08-21 09-21-04.png]]
+![fluent](./images/Screenshot-from-2022-08-21-09-21-04.png)
 - The three lines dealing with occurrences can be replaced by a single line using dict.setdefault.
 - setdefault --> Get the list of occurrences for word, or set it to [] if not found; setdefault returns the value, so it can be updated without requiring a second search
-![[images/Screenshot from 2022-08-21 09-21-33.png]]
+![fluent](./images/Screenshot-from-2022-08-21-09-21-33.png)
 ---
 ### Automatic Handling of Missing Keys
 1) use a defaultdict
@@ -90,8 +90,8 @@ describing the interfaces of dict and similar types.
 The callable that produces the default values is held in an instance attribute named default_factory.
 - If no default_factory is provided, the usual KeyError is raised for missing keys.
 
-![[images/Screenshot from 2022-08-21 09-33-37 1.png]]
-![[images/Screenshot from 2022-08-21 09-33-46 1.png]]
+![fluent](./images/Screenshot-from-2022-08-21-09-33-37-1.png)
+![fluent](./images/Screenshot-from-2022-08-21-09-33-46-1.png)
 - The default_factory of a defaultdict is only invoked to provide default values for `__getitem__` calls, and not for the other methods.
 
 ### The `__missing__` Method:
