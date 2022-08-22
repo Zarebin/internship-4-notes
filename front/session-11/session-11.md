@@ -1,10 +1,13 @@
-#session11#
-##JS##
+# Session11
+(1401/05/24)
+
+## JS
+
 - with the release of ES5, JS added strict mode as an opt-in mechanism for encouraging better JS programs
 - Most strict mode controls are in the form of early errors
 - you shouldnt think about strict mode as restriction . it is a guide that help you to write code better and have a js engines have a chance of running code efficiently
 
-##React##
+## React
 - we should render listes inside a components.
 - A “key” is a special string attribute you need to include when creating lists of elements
 - Keys help React identify which items have changed, are added, or are removed
@@ -64,12 +67,13 @@ function NumberList(props) {
 }
 ``
 
-# css ##
-## [:target](https://www.w3schools.com/cssref/sel_target.asp)
+##css
+
+- [:target](https://www.w3schools.com/cssref/sel_target.asp)
 The :target CSS pseudo-class represents a unique element (the target element) with an id matching the URL's fragment.
 
 
-## [:target-within](https://developer.mozilla.org/en-US/docs/Web/CSS/:target-within)
+- [:target-within](https://developer.mozilla.org/en-US/docs/Web/CSS/:target-within)
 
 `
 /* Selects a <div> when one of its descendants is a target */
@@ -78,16 +82,14 @@ div:target-within {
 }
 `
 
-## [:current](https://docs.w3cub.com/css/:current)
+- [:current](https://docs.w3cub.com/css/:current)
 The :current CSS pseudo-class selector is a time-dimensional pseudo-class that represents the element, or an ancestor of the element, that is currently being displayed. For example in a video with captions which are being displayed by WebVTT.
 ## [:past](https://docs.w3cub.com/css/:past)
 The :past CSS pseudo-class selector is a time-dimensional pseudo-class that will match for any element which appears entirely before an element that matches :current. For example in a video with captions which are being displayed by WebVTT.
 
-## [:future](https://docs.w3cub.com/css/:future)
+- [:future](https://docs.w3cub.com/css/:future)
 The :future CSS pseudo-class selector is a time-dimensional pseudo-class that will match for any element which appears entirely after an element that matches :current. For example in a video with captions which are being displayed by WebVTT.
 
-## [:playin](https://developer.mozilla.org/en-US/docs/Web/CSS/:playing)
+- [:playin](https://developer.mozilla.org/en-US/docs/Web/CSS/:playing)
 
-## [:paused](https://developer.mozilla.org/en-US/docs/Web/CSS/:paused)
-
-
+- [:paused](https://developer.mozilla.org/en-US/docs/Web/CSS/:paused)
