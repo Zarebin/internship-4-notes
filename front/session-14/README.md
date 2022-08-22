@@ -1,3 +1,8 @@
+# Session14
+(1401/05/30)
+
+## React
+
 - Often, several components need to reflect the same changing data.React recommend lifting shared state up to their closest common ancestor.
 
 - React explain lifting state up by creating a program consisted of two input boxs in which changing a input box would effect the other one. 
@@ -76,9 +81,9 @@ class Calculator extends React.Component {
 
 - React DOM updates the DOM with the boiling verdict and to match the desired input values. The input we just edited receives its current value, and the other    input is updated to the temperature after conversion.
 
-# Js
+## Js
 
-## Coercive Comparisons
+### Coercive Comparisons
 
 1- What is the meaning of Coercion?
  Coercion means a value of one type being converted to its respective representation in another type (to whatever extent possible)
