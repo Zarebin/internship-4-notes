@@ -56,7 +56,7 @@
   - Matches element within a shadow tree that has a matching part attribute.
   - [example](https://estelle.github.io/CSS/selectors/pseudo.html#slide25)
 
--[::slotted()](https://developer.mozilla.org/en-US/docs/Web/CSS/::slotted)
+- [::slotted()](https://developer.mozilla.org/en-US/docs/Web/CSS/::slotted)
   - Element placed into slot in an HTML template 
   - [example](https://estelle.github.io/CSS/selectors/pseudo.html#slide26) 
  
