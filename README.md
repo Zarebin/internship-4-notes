@@ -41,6 +41,10 @@
   - React (@lashkariam)
 - [Session-15 (1401/05/31)](front/session-15/)
   - Webpack(@Mr. Ketabi)
+- [Session-16 (1401/06/01)](front/session-16/)
+  - CSS (@NimaSaei379)
+  - Js (@lashkariam)
+  - React (@melika-ka)
 
 
 ## Python sessions
