@@ -1,3 +1,4 @@
+# Fluent
 ## Ditionaries and sets
 - dict type is a fundamental part of Python’s implementation.
 - The `__builtins__.__dict__` stores all built-in types, objects, and functions
@@ -97,3 +98,173 @@ The callable that produces the default values is held in an instance attribute n
 ### The `__missing__` Method:
 - This method is not defined in the base dict class, but dict is aware of it: if you subclass dict and provide a `__missing__` method, the standard dict.
 - `__getitem__` will call it whenever a key is not found, instead of raising KeyError.
+
+---
+
+# Distilled (5.18 - 5.21)
+## Decorators
+>A decorator is a function that creates a wrapper around another function.
+The primary purpose of this wrapping is to alter or enhance the behavior of
+the object being wrapped.
+```
+@decorate
+def func(x):
+	...
+```
+>The preceding code is shorthand for the following:
+```
+def func(x):
+	...
+
+func = decorate(func)
+```
+---
+### The @wraps Decorator
+>In python, functions are objects containing some metadata such as the function name, doc string, and type hints. If you put a wrapper around a function, this information gets hidden. The `@wraps()` decorator copies various function metadata to the replacement function. The following example illustrates this issue:
+
+code 1
+```
+def hello(func):
+	def call(*args, **kwargs):
+		print('Hello World!')
+		return func(*args, **kwargs)
+	return call
+
+@hello
+def djalal():
+	print('djalal')
+
+print(djalal.__name__)    # outputs call 
+```
+code 2
+```
+from functools import wraps
+
+def hello(func):
+	@wraps(func)
+	def call(*args, **kwargs):
+		print('Hello World!')
+		return func(*args, **kwargs)
+	return call
+
+@hello
+def djalal():
+	print('djalal')
+
+print(djalal.__name__)    # outputs djalal 
+```
+#### Note
+>The order in which decorators appear might matter. For example, in class
+definitions, decorators such as `@classmethod` and `@staticmethod` often have
+to be placed at the outermost level.
+---
+### Decorator Factory
+>Decorator factory is a function used to create decorators. The concept is best shown by an example:
+```
+def factory(msg):
+	def decorate(func):
+		def wrapper(*args, **kwargs):
+			print(msg)
+			return func(*args, **kwargs)
+		return wrapper
+	return decorate
+
+@factory('Hello world!')
+def foo1():
+	print('foo 1')
+
+@factory('Bye World!')
+def foo2():
+	print('foo 2')
+
+>>> foo1()
+Hello World!
+foo 1
+
+>>> foo2()
+Bye World!
+foo 2
+```
+---
+## Map, Filter, and Reduce
+### map
+>Takes a function and an iterable as inputs and passes each element of the iterable through the function. General syntax for map is:
+>`map(<function>, <iterable>)`
+```
+# example
+
+>>> nums = [1, 2, 3]
+>>> squares = map(lambda x: x**2, nums)
+
+>>> for e in squares:
+...	    print(e)
+...
+1
+4
+9
+```
+### filter
+>The built-in `filter()` function creates a generator that filters values. General syntax for filter is:
+>`filter(<function>, <iterable>)`
+```
+# example
+
+>>> nums = [1, 2, 3, 4]
+>>> odds = filter(lambda x: x&1, nums)
+
+>>> for e in odds:
+...     print(e)
+...
+1
+3
+```
+### reduce
+>In its general form, `reduce()` accepts a two-argument function, an
+iterable, and an initial value, accumulates (reduces) the values and returns a single object as its output. General syntax for reduce is as below:
+`reduce(<a two argument function>, <iterable>, <initial value>)`
+```
+# example
+from functools import reduce
+
+>>> nums = [1, 2, 3]
+>>> product = reduce(lambda x, y: x*y, nums, 1)
+>>> print(product)
+6
+```
+---
+## Function Introspection, Attributes, and Signatures
+>As you have seen, functions are objects—which means they can be
+assigned to variables, placed in data structures, and used in the same way as
+any other kind of data in a program.
+### inspect.signature
+```
+import inspect
+
+>>> def func(x: int, y:float, debug=False) -> float:
+...	    pass
+...
+>>> print(inspect.signature(func))
+<Signature (x: int, y: float, debug=False) -> float>
+```
+---
+## Stack Frame
+>A function can obtain its own stack frame using `inspect.currentframe()`:
+```
+import inspect
+
+def spam():
+	f = inspect.currentframe()
+	
+```
+> By doing so, we can access frame attributes listed in the following tabel.
+
+| Atrribute | Description |
+| --------- | ------------ |
+| f.f_back | Previous stack frame (toward the caller)|
+| f.f_code | Code object being executed |
+| f.f_locals | Dictionary of local variables (locals()) |\
+| f.f_globals | Dictionary used for global variables (globals()) |
+| f.f_builtins | Dictionary used for built-in names |
+| f.f_lineno | Line number |
+| f.f_lasti | Current instruction. This is an index into the bytecode string of f_code. |
+| f.f_trace | Function called at start of each source code line |
