@@ -53,7 +53,6 @@
   - CSS (@melika-ka)
   - Js (@garshasbi-f)
 
-
 ## Python sessions
 - [Session-01 (1401/05/11)](https://github.com/Zarebin/internship-4-notes/blob/python-session-01/python/session-01.md) gitignore, Python Distilled, Fluent Python, Mindomo
 - [Session-02 (1401/05/15)](https://github.com/Zarebin/internship-4-notes/blob/main/python/session-02.md) Python Distilled
