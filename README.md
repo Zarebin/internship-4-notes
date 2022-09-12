@@ -52,6 +52,23 @@
 - [Session-21 (1401/06/13)](front/session-21/)
   - CSS (@melika-ka)
   - Js (@garshasbi-f)
+- [Session-22 (1401/06/14)](front/session-22/)
+  - CSS (@NimaSaei379)
+  - Js (@lashkariam)
+  - React (@garshasbi-f)
+- [Session-23 (1401/06/15)](front/session-23/)
+  - CSS ()
+  - Js ()
+  - React ()
+- [Session-24 (1401/06/16)](front/session-24/)
+  - CSS (@Naghavi)
+  - Js (@Pazoki)
+  - React(@melika-ka)
+- [Session-25 (1401/06/19)](front/session-25/)
+  - Redux
+  - Js (@NimaSaei379)
+
+
 
 ## Python sessions
 - [Session-01 (1401/05/11)](https://github.com/Zarebin/internship-4-notes/blob/python-session-01/python/session-01.md) gitignore, Python Distilled, Fluent Python, Mindomo
